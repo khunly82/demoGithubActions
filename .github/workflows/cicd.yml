@@ -6,5 +6,7 @@ jobs:
   myFirstJob:
     runs-on: ubuntu-latest
     steps:
-      - name: SayHello
+      - name: sayHello
         run: echo 'Hello World !!'
+      - name: showFiles
+        run: ls
