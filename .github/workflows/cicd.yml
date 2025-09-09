@@ -6,7 +6,9 @@ jobs:
   myFirstJob:
     runs-on: ubuntu-latest
     steps:
-      - name: sayHello
+      - name: Checkout
+        uses: actions/checkout@4
+      - name: Say Hello
         run: echo 'Hello World !!'
-      - name: showFiles
+      - name: Show Files
         run: ls
